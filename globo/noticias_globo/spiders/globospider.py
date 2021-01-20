@@ -1,5 +1,5 @@
 import scrapy
-
+# from globo.models import Noticia
 
 class GlobospiderSpider(scrapy.Spider):
     name = 'globospider'
