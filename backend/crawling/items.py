@@ -5,7 +5,7 @@
 
 import scrapy
 from scrapy_djangoitem import DjangoItem
-from noticias.models import Noticia
+from noticias.models import Noticia, Jornal
 
 
 class NoticiaItem(DjangoItem):
