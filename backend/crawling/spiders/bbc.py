@@ -17,9 +17,10 @@ class BbcSpider(scrapy.Spider):
 
     def parse_item(self, response):
         i = NoticiaItem()
-        i['titulo'] = response.xpath(".//h3/a/span").extract_first()
+        i['titulo'] = response.xpath(".//h3/a/span/text()").extract_first()
         i['link'] = 'https://www.bbc.com/' + response.css(".qa-heading-link::attr(href)").extract_first()
-        i['descricao'] = response.xpath(".//p").extract_first()
+        i['descricao'] = response.xpath(".//p/text()").extract()
         i['imagem'] = response.css(".qa-srcset-image::attr(src)").extract_first()
         i['jornal'] = "bbc"
-        return i
+        i.save()
+        return

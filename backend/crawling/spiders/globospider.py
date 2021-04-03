@@ -24,6 +24,6 @@ class GlobospiderSpider(scrapy.Spider):
         i['link'] = response.css('.feed-post-link::attr(href)').extract_first()
         i['descricao'] = response.css('.feed-post-body-resumo::text').extract_first()
         i['imagem'] = response.css('.bstn-fd-picture-image::attr(src)').extract_first().split()[0]
-        i['jornal'] = "Globo"
-        return i
-#\34 8fa6879969c9c96f77cd973daa90d8d > div > div.feed-media-wrapper > a
+        i['jornal'] = "globo"
+        i.save()
+        return
