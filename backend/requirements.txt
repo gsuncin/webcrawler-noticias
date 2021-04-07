@@ -1,4 +1,5 @@
+celery==3.1.18
 django==2.2
+Pillow==8.1.2
 scrapy==2.4.0
 scrapy-djangoitem==1.1.1
-Pillow==8.1.2
