@@ -13,3 +13,10 @@ webcrawler para noticias selecionadas
     docker start webcrawler-django
     docker stop webcrawler-django
     docker exec -it webcrawler-django bash
+
+### Celery comandos 
+    Ubuntu
+    celery -A noticias worker -l info
+    
+    Windows:
+    celery -A noticias worker -l info -P threads

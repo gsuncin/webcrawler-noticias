@@ -4,9 +4,23 @@
     <list default="true" id="e38469b7-2035-447c-a928-f1835eab6179" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/noticias/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/noticias/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticias/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/noticias/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/src/views/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/noticias/src/views/Home.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +60,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -62,6 +76,8 @@
       <recent name="$PROJECT_DIR$/webcrawler/webcrawler/spiders" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\repositorios\webcrawler\backend\noticias" />
+      <recent name="C:\repositorios\webcrawler\backend\core" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -72,6 +88,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="core.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -104,6 +121,23 @@
       <workItem from="1617499402350" duration="1803000" />
       <workItem from="1617624291227" duration="39000" />
       <workItem from="1617806968833" duration="14648000" />
+      <workItem from="1617886451704" duration="11750000" />
+      <workItem from="1617904226690" duration="12000" />
+      <workItem from="1617905525424" duration="8000" />
+      <workItem from="1617905599157" duration="10000" />
+      <workItem from="1617907367996" duration="195000" />
+      <workItem from="1617907698276" duration="2527000" />
+      <workItem from="1617911987582" duration="2372000" />
+      <workItem from="1618096235784" duration="919000" />
+      <workItem from="1618324866991" duration="355000" />
+      <workItem from="1618325575809" duration="121000" />
+      <workItem from="1618325802311" duration="47000" />
+      <workItem from="1618505188430" duration="122000" />
+      <workItem from="1618513156051" duration="1072000" />
+      <workItem from="1618677819300" duration="259000" />
+      <workItem from="1618833747393" duration="11000" />
+      <workItem from="1619290892049" duration="908000" />
+      <workItem from="1619291845058" duration="1305000" />
     </task>
     <servers />
   </component>
