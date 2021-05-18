@@ -1,5 +1,5 @@
 import scrapy
-from noticias.models import QuotesDoc
+
 
 
 class QuotesSpider(scrapy.Spider):

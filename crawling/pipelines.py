@@ -11,7 +11,7 @@ from noticias.models import Noticia
 
 class CrawlingPipeline:
     def process_item(self, item, spider):
-        Noticia.objects.create(
+        Noticia(
             titulo=item['titulo'],
             link=item['link'],
             descricao=item['descricao'],

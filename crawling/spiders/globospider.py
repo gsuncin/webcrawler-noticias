@@ -4,19 +4,17 @@ from scrapy.spiders import CrawlSpider
 from noticias.models import Noticia, Jornal
 
 
-
 class GlobospiderSpider(scrapy.Spider):
     name = 'globospider'
     allowed_domains = ['g1.globo.com']
     start_urls = ['https://g1.globo.com/economia/tecnologia/']
 
-    def parse(self, response):
+    def parse(self, response, **kwargs):
         noticias = response.css('.bastian-page .bastian-feed-item')
         noticiasxpath = response.xpath('//*[@id="feed-placeholder"]/div/div/div[2]/div/div/div/div[1]/div')
 
         for row in noticias:
-            result = self.parse_item(row)
-            yield result
+            yield self.parse_item(row)
 
     def parse_item(self, response):
         i = NoticiaItem()
@@ -25,5 +23,4 @@ class GlobospiderSpider(scrapy.Spider):
         i['descricao'] = response.css('.feed-post-body-resumo::text').extract_first()
         i['imagem'] = response.css('.bstn-fd-picture-image::attr(src)').extract_first().split()[0]
         i['jornal'] = "globo"
-        i.save()
-        return
+        yield i.save()
