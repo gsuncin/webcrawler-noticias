@@ -13,7 +13,7 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'core.settings'
 import django
 django.setup()
 
-from backend.core.settings import MEDIA_ROOT
+from core.settings import MEDIA_ROOT
 
 BOT_NAME = 'crawling'
 IMAGES_STORE = MEDIA_ROOT

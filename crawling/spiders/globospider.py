@@ -1,5 +1,5 @@
 import scrapy
-from backend.crawling.items import NoticiaItem
+from crawling.items import NoticiaItem
 from scrapy.spiders import CrawlSpider
 from noticias.models import Noticia, Jornal
 
@@ -11,10 +11,10 @@ class GlobospiderSpider(scrapy.Spider):
 
     def parse(self, response, **kwargs):
         noticias = response.css('.bastian-page .bastian-feed-item')
-        noticiasxpath = response.xpath('//*[@id="feed-placeholder"]/div/div/div[2]/div/div/div/div[1]/div')
 
         for row in noticias:
             yield self.parse_item(row)
+        return len(noticias)
 
     def parse_item(self, response):
         i = NoticiaItem()
@@ -23,4 +23,5 @@ class GlobospiderSpider(scrapy.Spider):
         i['descricao'] = response.css('.feed-post-body-resumo::text').extract_first()
         i['imagem'] = response.css('.bstn-fd-picture-image::attr(src)').extract_first().split()[0]
         i['jornal'] = "globo"
-        yield i.save()
+        i.save()
+        return

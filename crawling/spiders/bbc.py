@@ -1,5 +1,5 @@
 import scrapy
-from backend.crawling.items import NoticiaItem
+from crawling.items import NoticiaItem
 from noticias.models import Noticia, Jornal
 
 
